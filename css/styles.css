@@ -129,7 +129,170 @@ body {
   z-index: 10;
 }
 
+/* ===== CTA CONTAINER & ELLIPSES ===== */
+.cta-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ellipse {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+}
+
+.ellipse-green {
+  background: #A5D6A7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.ellipse-purple {
+  background: #CE93D8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -70%);
+}
+
+.ellipse-yellow {
+  background: #FFE082;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+/* Dancing animation */
+.ellipse.dancing {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.ellipse-green.dancing {
+  animation-name: danceGreen;
+}
+
+.ellipse-purple.dancing {
+  animation-name: dancePurple;
+  animation-delay: 0.1s;
+}
+
+.ellipse-yellow.dancing {
+  animation-name: danceYellow;
+  animation-delay: 0.2s;
+}
+
+@keyframes danceGreen {
+  0% {
+    opacity: 0;
+    transform: translate(-80%, -50%) scale(0.5);
+  }
+  15% {
+    opacity: 0.5;
+    transform: translate(-90%, -60%) scale(1.1);
+  }
+  30% {
+    transform: translate(-70%, -40%) scale(0.9) rotate(10deg);
+  }
+  50% {
+    transform: translate(-85%, -55%) scale(1.05) rotate(-5deg);
+  }
+  70% {
+    transform: translate(-75%, -45%) scale(0.95) rotate(8deg);
+  }
+  85% {
+    opacity: 0.5;
+    transform: translate(-80%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(-80%, -50%) scale(1);
+  }
+}
+
+@keyframes dancePurple {
+  0% {
+    opacity: 0;
+    transform: translate(-20%, -70%) scale(0.5);
+  }
+  15% {
+    opacity: 0.5;
+    transform: translate(-10%, -80%) scale(1.15);
+  }
+  30% {
+    transform: translate(-30%, -60%) scale(0.85) rotate(-12deg);
+  }
+  50% {
+    transform: translate(-15%, -75%) scale(1.1) rotate(8deg);
+  }
+  70% {
+    transform: translate(-25%, -65%) scale(0.9) rotate(-6deg);
+  }
+  85% {
+    opacity: 0.5;
+    transform: translate(-20%, -70%) scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(-20%, -70%) scale(1);
+  }
+}
+
+@keyframes danceYellow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%) scale(0.5);
+  }
+  15% {
+    opacity: 0.5;
+    transform: translate(-40%, -20%) scale(1.2);
+  }
+  30% {
+    transform: translate(-60%, -40%) scale(0.88) rotate(15deg);
+  }
+  50% {
+    transform: translate(-45%, -25%) scale(1.08) rotate(-10deg);
+  }
+  70% {
+    transform: translate(-55%, -35%) scale(0.92) rotate(5deg);
+  }
+  85% {
+    opacity: 0.5;
+    transform: translate(-50%, -30%) scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -30%) scale(1);
+  }
+}
+
+/* Fade out */
+.ellipse.fade-out {
+  transition: opacity 0.8s ease;
+  opacity: 0 !important;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ellipse.dancing {
+    animation: none;
+    opacity: 0.4;
+  }
+  .ellipse.fade-out {
+    opacity: 0 !important;
+  }
+}
+
 .hero-cta {
+  position: relative;
+  z-index: 2;
   opacity: 0;
   pointer-events: none;
   cursor: pointer;

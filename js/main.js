@@ -54,11 +54,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ===== HERO ANIMATIONS =====
   const heroVideo = document.querySelector(".hero-video");
+  const ellipses = document.querySelectorAll('.ellipse');
 
   if (heroCta) {
     // Fade in after 2 seconds
     setTimeout(() => {
       heroCta.classList.add("pop-in");
+
+      // Trigger ellipse dancing animation when button appears
+      if (ellipses.length) {
+        ellipses.forEach(el => el.classList.add('dancing'));
+
+        // Fade out ellipses after 2 seconds of dancing
+        setTimeout(() => {
+          ellipses.forEach(el => el.classList.add('fade-out'));
+        }, 2000);
+      }
     }, 2000);
 
     heroCta.addEventListener("click", (e) => {
