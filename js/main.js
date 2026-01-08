@@ -53,10 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const heroOverlay = document.querySelector(".hero-overlay");
 
   // ===== HERO ANIMATIONS =====
+  const heroVideo = document.querySelector(".hero-video");
+
   if (heroCta) {
+    // Fade in after 2 seconds
     setTimeout(() => {
       heroCta.classList.add("pop-in");
-    }, 3000);
+    }, 2000);
 
     heroCta.addEventListener("click", (e) => {
       e.preventDefault();
@@ -65,13 +68,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Overlay transition: start at 2s, gradually increase over ~8s
   if (heroOverlay) {
-    setTimeout(() => {
+    // Set transition duration (adjust to match your video length minus 2s)
+    heroOverlay.style.transition = "background 8s ease, backdrop-filter 8s ease, -webkit-backdrop-filter 8s ease";
+
+    // Start transition after 2 second delay
+    setTimeout(function() {
       heroOverlay.classList.add("fade-in");
-    }, 3000);
-    setTimeout(() => {
-      heroOverlay.classList.add("blur-in");
-    }, 5000);
+    }, 2000);
   }
 
   // ===== CARDS ANIMATION =====

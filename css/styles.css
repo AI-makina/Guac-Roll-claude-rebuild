@@ -112,15 +112,14 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
   z-index: -1;
-  transition: background 1s ease;
+  transition: background 3s ease, backdrop-filter 3s ease, -webkit-backdrop-filter 3s ease;
 }
 
 .hero-overlay.fade-in {
   background: rgba(0, 0, 0, 0.5);
-}
-
-.hero-overlay.blur-in {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -132,18 +131,14 @@ body {
 
 .hero-cta {
   opacity: 0;
-  transform: translateY(18px) scale(0.75);
   pointer-events: none;
   cursor: pointer;
-  transition: opacity 260ms ease, filter 220ms ease;
-  will-change: transform, filter, opacity;
+  transition: opacity 0.8s ease, filter 220ms ease;
 }
 
 .hero-cta.pop-in {
   opacity: 1;
   pointer-events: auto;
-  animation: cartoonPop 720ms cubic-bezier(.2, 1.15, .25, 1) both,
-             heroPulse 2.8s ease-in-out infinite 1.2s;
 }
 
 .hero-cta:hover {
@@ -161,12 +156,6 @@ body {
   50% { transform: scale(1.03); }
 }
 
-@keyframes cartoonPop {
-  0% { transform: translateY(18px) scale(0.72); }
-  55% { transform: translateY(-6px) scale(1.12); }
-  78% { transform: translateY(2px) scale(0.97); }
-  100% { transform: translateY(0) scale(1); }
-}
 
 /* ===== PRE-MENU SECTION ===== */
 .pre-menu {
