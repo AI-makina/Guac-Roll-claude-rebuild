@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guac & Roll - Mexican Flavor on Tour</title>
+  <meta name="description" content="Guac & Roll food truck - Authentic Mexican street food in Sacramento. Tacos, burritos, bowls and more!">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">
+      <img src="assets/images/guac_and_roll_logo_only.png" alt="Guac & Roll Logo">
+    </a>
+    <ul class="navbar-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#tacos">Menu</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+    <button class="navbar-toggle" id="nav-toggle" aria-label="Menu">
+      &#9776;
+    </button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video/hero-background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <a href="#tacos" class="hero-cta" id="hero-cta">
+        <img src="assets/images/hero/flavor-tour-button.png" alt="Start the Flavor Tour">
+      </a>
+    </div>
+  </section>
+
+  <!-- PRE-MENU SECTION -->
+  <section class="pre-menu">
+    <div class="pre-menu-content">
+      <h2>Mexican Flavor on Tour</h2>
+      <img src="assets/images/guac_and_roll_logo_only.png" alt="Guac & Roll" class="pre-menu-logo">
+      <div class="cards-grid">
+        <div class="cards-card">
+          <img src="assets/images/hero/Fish Tacos.png" alt="Fish Tacos">
+        </div>
+        <div class="cards-card">
+          <img src="assets/images/hero/Chicken Tacos.png" alt="Chicken Tacos">
+        </div>
+        <div class="cards-card">
+          <img src="assets/images/hero/cropped image.png" alt="Guac & Roll Logo">
+        </div>
+        <div class="cards-card">
+          <img src="assets/images/hero/Carne Asada Burrito.png" alt="Carne Asada Burrito">
+        </div>
+        <div class="cards-card">
+          <img src="assets/images/hero/Flautas.png" alt="Flautas">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTIONS -->
+  <section class="menu-section">
+    <div class="menu-wrapper">
+
+      <!-- ROW 1: TACOS & BURRITOS -->
+      <div class="menu-grid">
+        <!-- TACOS -->
+        <section class="menu-category" id="tacos">
+          <div class="menu-category-header">
+            <div class="menu-category-label">&#11088; Headliner Tacos &bull; Los Estelares</div>
+            <h2 class="menu-category-title">Fun, bold names inspired by destinations + music legends.</h2>
+          </div>
+          <ul class="menu-list">
+            <!-- Cancun Crunch Taco -->
+            <li class="menu-item" data-item-id="cancun-crunch" data-price="6.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Cancun Crunch Taco.png" alt="Cancun Crunch Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Cancun Crunch Taco</span>
+                    </div>
+                    <div class="menu-item-price">$6.99</div>
+                  </div>
+                  <p class="menu-item-desc">Crispy beer-battered fish, lime crema, cabbage, pico — beach vibes in one bite.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Acapulco Heat -->
+            <li class="menu-item" data-item-id="acapulco-heat" data-price="7.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Acapulco Heat.png" alt="Acapulco Heat Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Acapulco Heat</span>
+                      <span class="menu-item-tag tag-spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-price">$7.99</div>
+                  </div>
+                  <p class="menu-item-desc">Spicy grilled shrimp, chipotle aioli, mango salsa — hot like the Pacific sun.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Taco Santana -->
+            <li class="menu-item" data-item-id="taco-santana" data-price="7.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Taco Santana.png" alt="Taco Santana">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Taco Santana</span>
+                    </div>
+                    <div class="menu-item-price">$7.49</div>
+                  </div>
+                  <p class="menu-item-desc">Carne asada with roasted peppers &amp; onions, topped with "Black Magic" guac.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Mana Mango Taco -->
+            <li class="menu-item" data-item-id="mana-mango-taco" data-price="6.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Mana Mango Taco.png" alt="Mana Mango Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Mana Mango Taco</span>
+                    </div>
+                    <div class="menu-item-price">$6.99</div>
+                  </div>
+                  <p class="menu-item-desc">Grilled chicken with mango-habanero glaze — sweet + heat in harmony.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Tulum Verde -->
+            <li class="menu-item" data-item-id="tulum-verde" data-price="6.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Tulum Verde-af80-4261-8243-5f450a9d14ab_3.png" alt="Tulum Verde Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Tulum Verde (Vegetarian)</span>
+                      <span class="menu-item-tag tag-veg">Veg</span>
+                    </div>
+                    <div class="menu-item-price">$6.49</div>
+                  </div>
+                  <p class="menu-item-desc">Grilled cactus (nopal), queso fresco, cilantro-lime salsa — earthy &amp; fresh.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- CDMX Street Classic -->
+            <li class="menu-item" data-item-id="cdmx-street-classic" data-price="6.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/CDMX Taco.png" alt="CDMX Street Classic Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">CDMX Street Classic</span>
+                    </div>
+                    <div class="menu-item-price">$6.99</div>
+                  </div>
+                  <p class="menu-item-desc">Al pastor with pineapple, onion &amp; cilantro — the capital's signature flavor.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Baja Rocker -->
+            <li class="menu-item" data-item-id="baja-rocker" data-price="7.29">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/tacos/Baja Rocker Taco.png" alt="Baja Rocker Taco">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Baja Rocker</span>
+                    </div>
+                    <div class="menu-item-price">$7.29</div>
+                  </div>
+                  <p class="menu-item-desc">Baja-style crispy fish with jalapeno tartar — coastal rock flavor.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- BURRITOS -->
+        <section class="menu-category" id="burritos">
+          <div class="menu-category-header">
+            <div class="menu-category-label">&#127791; Burritos &bull; The Big Encore Rolls</div>
+            <h2 class="menu-category-title">Larger entrees with rock-tour energy.</h2>
+          </div>
+          <ul class="menu-list">
+            <!-- The Santana Solo -->
+            <li class="menu-item" data-item-id="santana-solo" data-price="11.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/burritos/The Santana Solo.png" alt="The Santana Solo">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">The Santana Solo</span>
+                    </div>
+                    <div class="menu-item-price">$11.99</div>
+                  </div>
+                  <p class="menu-item-desc">Carne asada, rice, beans, peppers, cheese blend — a legendary classic.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- The Mana Mix Tour -->
+            <li class="menu-item" data-item-id="mana-mix-tour" data-price="12.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/burritos/The Mana Mix Tour.png" alt="The Mana Mix Tour">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">The Mana Mix Tour</span>
+                    </div>
+                    <div class="menu-item-price">$12.49</div>
+                  </div>
+                  <p class="menu-item-desc">Chicken, black beans, corn, pico, chipotle crema — a flavor ensemble.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- The Acapulco Wave -->
+            <li class="menu-item" data-item-id="acapulco-wave" data-price="14.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/burritos/The Acapulco Wave.png" alt="The Acapulco Wave">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">The Acapulco Wave</span>
+                    </div>
+                    <div class="menu-item-price">$14.99</div>
+                  </div>
+                  <p class="menu-item-desc">Shrimp, rice, pineapple salsa, spicy mayo — tropical &amp; bold.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- The Guadalajara Groove -->
+            <li class="menu-item" data-item-id="guadalajara-groove" data-price="11.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/burritos/The Guadalajara Groove.png" alt="The Guadalajara Groove">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">The Guadalajara Groove</span>
+                    </div>
+                    <div class="menu-item-price">$11.49</div>
+                  </div>
+                  <p class="menu-item-desc">Carnitas, pickled onions, salsa verde — simple, powerful rhythm.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Viva Veggie Tour -->
+            <li class="menu-item" data-item-id="viva-veggie-tour" data-price="10.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/burritos/Viva Veggie Tour.png" alt="Viva Veggie Tour">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Viva Veggie Tour</span>
+                      <span class="menu-item-tag tag-veg">Veg</span>
+                    </div>
+                    <div class="menu-item-price">$10.99</div>
+                  </div>
+                  <p class="menu-item-desc">Grilled veggies, nopal strips, avocado, cilantro rice — plant-powered rock.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- ROW 2: BOWLS & SIDES -->
+      <div class="menu-grid" style="margin-top: 2rem;">
+        <!-- BOWLS -->
+        <section class="menu-category" id="bowls">
+          <div class="menu-category-header">
+            <div class="menu-category-label">&#129379; Bowls &bull; Backstage Bowls</div>
+            <h2 class="menu-category-title">Clean, modern, customizable — backstage fuel for the tour.</h2>
+          </div>
+          <ul class="menu-list">
+            <!-- The Riviera Maya Bowl -->
+            <li class="menu-item" data-item-id="riviera-maya-bowl" data-price="12.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/bowls/The Riviera Maya Bowl.png" alt="The Riviera Maya Bowl">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">The Riviera Maya Bowl</span>
+                    </div>
+                    <div class="menu-item-price">$12.99</div>
+                  </div>
+                  <p class="menu-item-desc">Choice of chicken or shrimp over cilantro rice, black beans, corn, pico, avocado — fresh &amp; beachy.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Oaxacan Ember Bowl -->
+            <li class="menu-item" data-item-id="oaxacan-ember-bowl" data-price="13.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/bowls/Oxacan Ember Bowl.png" alt="Oaxacan Ember Bowl">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Oaxacan Ember Bowl</span>
+                      <span class="menu-item-tag tag-spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-price">$13.49</div>
+                  </div>
+                  <p class="menu-item-desc">Smoky tinga chicken, crema, queso fresco, cabbage — deep southern heat with a cozy finish.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Rock & Verde Bowl -->
+            <li class="menu-item" data-item-id="rock-verde-bowl" data-price="12.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/bowls/Rock & Verde Bowl.png" alt="Rock & Verde Bowl">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Rock &amp; Verde Bowl</span>
+                    </div>
+                    <div class="menu-item-price">$12.49</div>
+                  </div>
+                  <p class="menu-item-desc">Choice of protein, salsa verde, charred veggies — zesty, bright, and made to riff on.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- SIDES -->
+        <section class="menu-category" id="sides">
+          <div class="menu-category-header">
+            <div class="menu-category-label">&#127839; Sides &bull; The Opening Acts</div>
+            <h2 class="menu-category-title">Small bites that set the tone before the headliner.</h2>
+          </div>
+          <ul class="menu-list">
+            <!-- Guac & Roll Chips -->
+            <li class="menu-item" data-item-id="guac-roll-chips" data-price="5.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/sides/Guac & Roll Chips.png" alt="Guac & Roll Chips">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Guac &amp; Roll Chips</span>
+                    </div>
+                    <div class="menu-item-price">$5.99</div>
+                  </div>
+                  <p class="menu-item-desc">Signature guacamole served with house-made tortilla chips — a classic opener.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Fiesta Fries -->
+            <li class="menu-item" data-item-id="fiesta-fries" data-price="4.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/sides/Fiesta Fries.png" alt="Fiesta Fries">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Fiesta Fries</span>
+                    </div>
+                    <div class="menu-item-price">$4.99</div>
+                  </div>
+                  <p class="menu-item-desc">Mexican-seasoned fries with chipotle mayo — crispy, bold, and addictive.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Cabo Elote Cup -->
+            <li class="menu-item" data-item-id="cabo-elote-cup" data-price="4.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/sides/Cabo Elote Cup.png" alt="Cabo Elote Cup">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Cabo Elote Cup</span>
+                    </div>
+                    <div class="menu-item-price">$4.49</div>
+                  </div>
+                  <p class="menu-item-desc">Mexican street corn off the cob with lime, chili, and cotija — creamy and punchy.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Rockstar Salsa Trio -->
+            <li class="menu-item" data-item-id="rockstar-salsa-trio" data-price="3.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/sides/Rockstar Salsa Trio.png" alt="Rockstar Salsa Trio">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Rockstar Salsa Trio</span>
+                    </div>
+                    <div class="menu-item-price">$3.99</div>
+                  </div>
+                  <p class="menu-item-desc">Roja, Verde, and Mango salsas — the ultimate tour sampler.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- ROW 3: DRINKS -->
+      <div class="menu-grid" style="margin-top: 2rem;">
+        <!-- DRINKS -->
+        <section class="menu-category" id="drinks">
+          <div class="menu-category-header">
+            <div class="menu-category-label">&#129380; Drinks &bull; The Refreshing Setlist</div>
+            <h2 class="menu-category-title">Cool, bold sips to keep the tour going.</h2>
+          </div>
+          <ul class="menu-list">
+            <!-- Jalisco Jam Horchata -->
+            <li class="menu-item" data-item-id="jalisco-jam-horchata" data-price="3.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/drinks/Jalisco Jam Horchata.png" alt="Jalisco Jam Horchata">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Jalisco Jam Horchata</span>
+                    </div>
+                    <div class="menu-item-price">$3.99</div>
+                  </div>
+                  <p class="menu-item-desc">House-made rice milk with vanilla — creamy, smooth, and classic.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Lime & Roll Agua Fresca -->
+            <li class="menu-item" data-item-id="lime-roll-agua" data-price="3.49">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/drinks/Lime & Roll Agua Fresca.png" alt="Lime & Roll Agua Fresca">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Lime &amp; Roll Agua Fresca</span>
+                    </div>
+                    <div class="menu-item-price">$3.49</div>
+                  </div>
+                  <p class="menu-item-desc">Classic lime agua fresca with a rockstar twist — light and refreshing.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Mango Mana Refresher -->
+            <li class="menu-item" data-item-id="mango-mana-refresher" data-price="3.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/drinks/Mango Mana Refresher.png" alt="Mango Mana Refresher">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Mango Mana Refresher</span>
+                    </div>
+                    <div class="menu-item-price">$3.99</div>
+                  </div>
+                  <p class="menu-item-desc">Mango-infused agua with tajin — tropical, bold, and electric.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Cafe Tacvba Cold Brew -->
+            <li class="menu-item" data-item-id="cafe-tacvba-cold-brew" data-price="4.99">
+              <div class="menu-item-main">
+                <img class="menu-item-image" src="assets/images/menu/drinks/Cafe Tacvba Cold Brew.png" alt="Cafe Tacvba Cold Brew">
+                <div class="menu-item-text">
+                  <div class="menu-item-header">
+                    <div>
+                      <span class="menu-item-name menu-item-name-text">Cafe Tacvba Cold Brew</span>
+                    </div>
+                    <div class="menu-item-price">$4.99</div>
+                  </div>
+                  <p class="menu-item-desc">Mexican-inspired cold brew with cinnamon &amp; piloncillo — smooth with a kick.</p>
+                  <div class="menu-item-controls">
+                    <button class="btn btn-ghost details-btn" type="button">Details</button>
+                    <div class="qty-control">
+                      <button class="qty-btn" type="button" data-action="decrease">-</button>
+                      <input class="qty-input" type="text" value="1" inputmode="numeric">
+                      <button class="qty-btn" type="button" data-action="increase">+</button>
+                    </div>
+                    <button class="btn btn-primary add-btn" type="button">Add</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-eyebrow">Contact Us</div>
+        <h2 class="contact-title">Let's taco 'bout it &#127790;</h2>
+        <p class="contact-subtitle">Questions, catering, or just want to find us tonight? Hit us up.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-label">Hours</span>
+            <div class="contact-value">
+              Thu-Fri: 6:00 PM - 11:00 PM<br>
+              Sat: 4:00 PM - 11:00 PM
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Location</span>
+            <div class="contact-value">
+              117 J St, Sacramento, CA 95814<br>
+              <a href="https://maps.google.com/?q=117+J+St+Sacramento+CA" target="_blank">Open in Google Maps &rarr;</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Call / Text</span>
+            <div class="contact-value">
+              <a href="tel:888-888-8888">888-888-8888</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <div class="contact-value">
+              <a href="mailto:support@guacandroll.com">support@guacandroll.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <a href="tel:888-888-8888" class="contact-btn contact-btn-primary">Call now</a>
+          <a href="mailto:support@guacandroll.com" class="contact-btn contact-btn-secondary">Email us</a>
+        </div>
+      </div>
+      <div class="contact-image">
+        <img src="assets/images/contact/food-truck-capitol.png" alt="Guac & Roll Food Truck at Sacramento Capitol">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Guac & Roll. All rights reserved. | Mexican Flavor on Tour</p>
+  </footer>
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- CART DRAWER -->
+  <div class="cart" id="cart">
+    <div class="cart-title">&#128722; <span>Your Order</span></div>
+    <div class="cart-subtitle">Review your items &amp; pay online.</div>
+
+    <ul class="cart-items" id="cart-items">
+      <li class="cart-empty" id="cart-empty">Your cart is empty. Start your flavor tour!</li>
+    </ul>
+
+    <div class="cart-footer">
+      <div>Items: <strong id="cart-count">0</strong></div>
+      <div>Total: <strong id="cart-total">$0.00</strong></div>
+    </div>
+
+    <div class="cart-breakdown">
+      <div class="row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+      <div class="row"><span>Tax (8.75%)</span><span id="tax">$0.00</span></div>
+
+      <div class="tip">
+        <div class="tip-label">Tip</div>
+        <div class="tip-buttons">
+          <button type="button" class="tip-btn" data-tip="0">0%</button>
+          <button type="button" class="tip-btn" data-tip="10">10%</button>
+          <button type="button" class="tip-btn" data-tip="15">15%</button>
+          <button type="button" class="tip-btn" data-tip="20">20%</button>
+
+          <button type="button" class="tip-btn tip-other-btn" data-tip="other">
+            <span class="tip-other-label">Other</span>
+            <span class="tip-other-inputwrap" aria-hidden="true">
+              <input type="text" id="tip-other-input" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off">
+              <span class="tip-other-suffix">%</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row total"><span>Final total</span><span id="final">$0.00</span></div>
+    </div>
+
+    <button class="cart-checkout-btn" type="button" id="cart-checkout">Checkout</button>
+  </div>
+
+  <!-- CART TOGGLE PILL -->
+  <button type="button" class="cart-toggle" id="cart-toggle">
+    &#128722; Cart
+    <span class="cart-toggle-badge" id="cart-toggle-badge">0</span>
+  </button>
+
+  <!-- NUTRITION MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-title">Item details</div>
+        <button class="modal-close" type="button" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-subtitle" id="modal-subtitle">Per portion</div>
+      <table class="nutrition-table"><tbody id="nutrition-body"></tbody></table>
+      <div class="nutrition-note">*Nutritional values are approximate and for concept/demo purposes.</div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-backdrop" id="checkout-backdrop">
+    <div class="checkout-modal">
+      <div class="modal-header">
+        <div class="modal-title">Order Summary</div>
+        <button class="modal-close" type="button" id="checkout-close">&times;</button>
+      </div>
+      <div class="modal-subtitle">Review your items before proceeding to payment.</div>
+      <ul class="checkout-list" id="checkout-list"></ul>
+      <div class="checkout-breakdown">
+        <div class="row">
+          <span>Items</span>
+          <span id="checkout-count">0</span>
+        </div>
+        <div class="row">
+          <span>Subtotal</span>
+          <span id="checkout-subtotal">$0.00</span>
+        </div>
+        <div class="row indent">
+          <span>Tax (8.75%)</span>
+          <span id="checkout-tax">$0.00</span>
+        </div>
+        <div class="row indent">
+          <span>Tip (<span id="checkout-tip-percent">0</span>%)</span>
+          <span id="checkout-tip">$0.00</span>
+        </div>
+        <div class="row total">
+          <span>Total</span>
+          <span id="checkout-total">$0.00</span>
+        </div>
+        <button class="checkout-confirm-btn" type="button" id="checkout-confirm">Proceed to payment</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE NAV MODAL -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <h2 class="mobile-nav-title">Choose a Category</h2>
+        <button class="mobile-nav-close" id="mobile-nav-close">Close &times;</button>
+      </div>
+      <div class="mobile-nav-grid">
+        <a class="mobile-nav-card" href="#tacos" data-target="tacos">
+          <img src="assets/images/nav/Tacos.png" alt="Tacos">
+          <div><h3>&#11088; Headliner Tacos</h3><p>Los Estelares — bold, tour-stop inspired tacos.</p></div>
+        </a>
+        <a class="mobile-nav-card" href="#burritos" data-target="burritos">
+          <img src="assets/images/nav/Burritos.png" alt="Burritos">
+          <div><h3>&#127791; Burritos</h3><p>The Big Encore Rolls — big, loud, satisfying.</p></div>
+        </a>
+        <a class="mobile-nav-card" href="#bowls" data-target="bowls">
+          <img src="assets/images/nav/Bowl.png" alt="Bowls">
+          <div><h3>&#129379; Bowls</h3><p>Backstage Bowls — clean and customizable fuel.</p></div>
+        </a>
+        <a class="mobile-nav-card" href="#sides" data-target="sides">
+          <img src="assets/images/nav/Guac and Chips.png" alt="Sides">
+          <div><h3>&#127839; Sides</h3><p>The Opening Acts — chips, fries, elote, salsas.</p></div>
+        </a>
+        <a class="mobile-nav-card" href="#drinks" data-target="drinks">
+          <img src="assets/images/nav/Horchata.png" alt="Drinks">
+          <div><h3>&#129380; Drinks</h3><p>The Refreshing Setlist — horchata, aguas frescas, more.</p></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
